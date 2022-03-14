@@ -19,6 +19,7 @@ In this competition, we will learn a model that infers the relationship between 
 - transformers==4.10.0
 - fairseq
 - numpy
+- wandb==0.12.3
 - sentencepiece
 - konlpy
 

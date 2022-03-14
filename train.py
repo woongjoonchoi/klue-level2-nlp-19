@@ -121,12 +121,10 @@ def train(args):
     Custom Code
   '''
   # load dataset
-  # train_data = load_data("../dataset/train/train.csv")
-  # train_dataset, dev_dataset = train_test_split(train_data, stratify= train_data.label, test_size= 0.1, random_state=1004)
-  train_dataset = load_data("dataset/train/train.csv")
-  dev_dataset = load_data("dataset/train/dev_dataset.csv")
-  # train_dataset = load_data("./data/train.csv")
-  # dev_dataset = load_data("./data/valid.csv") # validation용 데이터는 따로 만드셔야 합니다.
+
+  train_dataset = load_data("new_dataset/train.csv")
+  dev_dataset = load_data("new_dataset/dev.csv")
+
   ''' 
     End
   '''
@@ -134,12 +132,11 @@ def train(args):
   dev_label = label_to_num(dev_dataset['label'].values)
 
   # # tokenizing dataset
-  # tokenized_train = tokenized_dataset(train_dataset, tokenizer)
-  # tokenized_dev = tokenized_dataset(dev_dataset, tokenizer)
+
 
   if args.entity_marker : 
-    marked_train_dataset = load_data_marker("dataset/train/train.csv")
-    marked_dev_dataset = load_data_marker("dataset/train/dev_dataset.csv")
+    marked_train_dataset = load_data_marker("new_dataset/train.csv")
+    marked_dev_dataset = load_data_marker("new_dataset/dev.csv")
     concated_train_dataset=concat_entity_idx(train_dataset,marked_train_dataset)
     concated_dev_dataset=concat_entity_idx(dev_dataset,marked_dev_dataset)
     tokenized_train = marker_tokenized_dataset(concated_train_dataset,tokenizer)

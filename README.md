@@ -24,7 +24,7 @@ In this competition, we will learn a model that infers the relationship between 
 - konlpy
 
 ```
- cd whatever-your-directory_contain_repo
+ cd where-your-directory_contain_repo
  pip install -r klue-level2-nlp-19/requirements.txt
 ```
 <br/>

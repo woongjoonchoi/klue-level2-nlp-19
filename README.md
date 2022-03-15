@@ -113,3 +113,6 @@ prediction/
 ├──sample_submission.csv
 └──submission.csv
 ```
+
+### 4 . Result
+https://docs.google.com/presentation/d/1_wO1XZXMfkSBaMuadQUW1wzWi2RhHFOYSWyHP9hSqds/edit?usp=sharing
